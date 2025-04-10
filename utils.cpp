@@ -113,7 +113,7 @@ void utils::createModuleProps()
         << "versionCode=" << versionCode << '\n'
         << "author=The Community - Ylarod - Exo1i\n"
         << "description=Runs a stealthier frida-server on boot\n"
-        << "updateJson=https://github.com/nexto/magiskhluda/releases/latest/download/update.json";
+        << "updateJson=https://github.com/nextco/magiskhluda/releases/latest/download/update.json";
 }
 
 void utils::createUpdateJson()
@@ -130,7 +130,7 @@ void utils::createUpdateJson()
     updateJson << "{\n"
         << R"(  "version": ")" << latestTag << "\",\n"
         << "  \"versionCode\": " << versionCode << ",\n"
-        << R"(  "zipUrl": "https://github.com/nexto/magiskhluda/releases/download/)"
+        << R"(  "zipUrl": "https://github.com/nextco/magiskhluda/releases/download/)"
         << latestTag << "/Magisk-Florida-Universal-" << latestTag << ".zip\",\n"
         << R"(  "changelog": "https://gist.githubusercontent.com/Exo1i/22b6b1aa3a78d421f30410bc1bf24212/raw/0ad35b77c347748a311a004b9e5a558bf97bf357/gistfile1.txt")"
         << "\n}\n";
